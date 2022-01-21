@@ -1,0 +1,29 @@
+name: NetherWrapper
+version: 0.0
+description: Changes Nether's metric from euclidean to toroidal
+load: STARTUP
+author: RandomPersson
+authors: []
+website: https://discord.gg/RmDbKqq
+
+main: pl.org.mensa.rp.mc.NetherWrapper.NetherWrapperPlugin
+database: false
+depend: []
+prefix: 
+softdepend: []
+loadbefore: []
+
+commands:
+  quicktown:
+    description: Use /NetherWrapper help for more info.
+    aliases: [nw]
+    permission: netherwrapper.command.netherwrapper
+    permission-message: The Tea God has not bestowed the power of this command upon you.
+    usage: Use /<command> help for more info.
+permissions:
+  netherwrapper.command.netherwrapper:
+    description: See the list of commands
+    default: false
+    children:
+      childtestpermission: true
+      parenttestpermission: false
